@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medical News & Events Newsletter</title>
+    <link rel="icon" href="Screenshot 2026-03-15 164037-Photoroom.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background:
+             #f9f9f9;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 2rem;
+        }
+        h1, h2 {
+            color: #0077b6;
+        }
+        .event, .news {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: #e9ecef;
+            border-radius: 6px;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        .subscribe-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        .subscribe-form input[type="email"] {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .subscribe-form button {
+            background: #0077b6;
+            color: #fff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .subscribe-form button:focus {
+            outline: 2px solid #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" aria-labelledby="newsletter-title">
+        <h1 id="newsletter-title">Medical News & Events Newsletter</h1>
+        <p>Stay updated with the latest medical news and upcoming events. Accessible for everyone.</p>
+
+        <section aria-labelledby="news-section">
+            <h2 id="news-section">Latest Medical News</h2>
+            <article class="news" aria-label="COVID-19 Vaccine Update">
+                <h3>COVID-19 Vaccine Update</h3>
+                <p>New research shows improved efficacy for the latest COVID-19 vaccines. <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/index.html" target="_blank" rel="noopener">Read more</a>.</p>
+            </article>
+            <article class="news" aria-label="Heart Health Awareness">
+                <h3>Heart Health Awareness</h3>
+                <p>February is Heart Health Month. Learn tips to keep your heart healthy. <a href="https://www.heart.org/en/healthy-living" target="_blank" rel="noopener">Learn more</a>.</p>
+            </article>
+        </section>
+
+        <section aria-labelledby="events-section">
+            <h2 id="events-section">Upcoming Events</h2>
+            <div class="event" aria-label="Medical Webinar">
+                <h3>Medical Webinar: Advances in Diabetes Care</h3>
+                <p>Date: March 15, 2024<br>
+                Location: Online<br>
+                <a href="https://www.diabetes.org/events" target="_blank" rel="noopener">Register here</a></p>
+            </div>
+            <div class="event" aria-label="Health Fair">
+                <h3>Community Health Fair</h3>
+                <p>Date: April 10, 2024<br>
+                Location: City Hall<br>
+                <a href="https://www.healthfair.com/" target="_blank" rel="noopener">More info</a></p>
+            </div>
+        </section>
+
+        <section aria-labelledby="subscribe-section">
+            <h2 id="subscribe-section">Subscribe</h2>
+            <form class="subscribe-form" aria-label="Newsletter Subscription" action="#" method="post">
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" required aria-required="true" aria-describedby="email-desc">
+                <span id="email-desc">We'll never share your email with anyone else.</span>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
